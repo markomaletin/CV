@@ -173,6 +173,8 @@ li
    {
        width: 100%;
        height: 400vh;
+       margin: 0;
+       padding: 0;
    }
 
    #osnovni
@@ -181,14 +183,18 @@ li
        clear: both;
        height: auto;
        padding-bottom: 40px;
+       margin: 0;
    }
+
+    #osnovniPodaci div
+    {
+        margin-bottom: 15px;
+    }
 
    #podaci
    {
        width: 85%;
        height: auto;
        clear: both;
-       margin-right: 40px;
-       //word-break: break-all;
    }
 }
