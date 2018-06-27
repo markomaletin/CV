@@ -5,7 +5,7 @@ body{
 #sadrzaj
 {
     width: 80%;
-    height: 230vh;
+    height: 210vh;
     margin: auto;
     background-color: white;
     box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
@@ -14,8 +14,8 @@ body{
 #osnovni
 {
     width: 40%;
-    height: 230vh;
-    background-color: brown;
+    height: 100%;
+    background-color: #004f78;
     float: left;
 }
 
@@ -23,7 +23,7 @@ body{
 {
     width: 100%;
     height: auto;
-    background-color: firebrick;
+    background-color: #003366;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
 }
 
@@ -33,12 +33,14 @@ body{
     margin-left: 15%;
     margin-top: 30px;
     border-radius: 50%;
+
 }
 
 h1
 {
     text-align: center;
     color: white;
+    font-size: 40px;
 }
 
 h2
@@ -70,11 +72,19 @@ h2
     color: white;
     text-decoration: none;
     margin-left: 15px;
-
 }
+
+.kontaktLink:hover
+{
+    text-decoration: underline;
+}
+
+
 #osnovniPodaci div
 {
     margin-bottom: 5px;
+    transition: opacity;
+    transition-duration: 400ms;
 }
 
 #osnovniPodaci div:hover
@@ -97,7 +107,7 @@ li
 #podaci
 {
     width: calc(60% - 60px);
-    height: 230vh;
+    height: auto;
     float: left;
     padding: 30px;
 }
@@ -105,8 +115,10 @@ li
 
 #podaci h2
 {
-    color: dimgray;
-    text-align: center;
+    color: #004f78;
+    //text-align: center;
+    line-height: 30px;
+    margin-left: 40px;
 }
 
 #podaci li
@@ -123,4 +135,48 @@ li
 #podaci p
 {
     color: dimgray;
+}
+
+#podaci a
+{
+    text-decoration: none;
+    color: #004f78;
+    transition: color;
+    transition-duration: 700ms;
+}
+
+#podaci a:hover
+{
+    text-decoration: underline;
+    color: dimgray;
+}
+
+
+@media only screen and (max-width: 1000px) {
+   #sadrzaj
+   {
+       width: 100%;
+       height: 400vh;
+       margin: 0;
+       padding: 0;
+
+
+   }
+
+   #osnovni
+   {
+       width: 100%;
+       clear: both;
+       height: auto;
+       padding-bottom: 40px;
+   }
+
+   #podaci
+   {
+       width: 90%;
+       height: auto;
+       clear: both;
+       //padding-right: 40px;
+       //word-break: break-all;
+   }
 }
