@@ -175,6 +175,7 @@ li
        height: 400vh;
        margin: 0;
        padding: 0;
+       box-shadow: none;
    }
 
    #osnovni
